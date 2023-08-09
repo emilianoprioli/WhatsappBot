@@ -11,12 +11,12 @@ const MockAdapter = require("@bot-whatsapp/database/mock");
 
 const secundario = addKeyword([]).addAnswer([
   "Por favor ingrese una respuesta válida.",
-  "*Muchas gracias, Medicina y Salud Berazategui.*",
+  "*Muchas gracias, ImágenesMedicina&Salud.*",
 ]);
 
 const abdominal = addKeyword(["1", "abdominal", "Abdominal"]).addAnswer([
   "Para una ecografía abdominal se necesitan 8 horas de ayuno.",
-  "*Muchas gracias, Medicina y Salud Berazategui.*",
+  "*Muchas gracias, ImágenesMedicina&Salud.*",
 ]);
 
 const ginecológicaTransabdominal = addKeyword([
@@ -25,12 +25,12 @@ const ginecológicaTransabdominal = addKeyword([
   "Ginecológica transabdominal",
 ]).addAnswer([
   "Para una ecografía ginecológica transabdominal se necesita ingerir medio litro de agua media hora antes del estudio.",
-  "*Muchas gracias, Medicina y Salud Berazategui.*",
+  "*Muchas gracias, ImágenesMedicina&Salud.*",
 ]);
 
 const obstetrica = addKeyword(["3", "obstetrica", "Obstetrica"]).addAnswer([
   "Para una ecografía obstétrica de hasta 3 meses de embarazo, se necesita ingerir medio litro de agua media hora antes del estudio. Más de 3 meses de embarazo sin preparación.",
-  "*Muchas gracias, Medicina y Salud Berazategui.*",
+  "*Muchas gracias, ImágenesMedicina&Salud.*",
 ]);
 
 const Hepatobiliopancreatica = addKeyword([
@@ -39,17 +39,17 @@ const Hepatobiliopancreatica = addKeyword([
   "Hepatobiliopancreatica",
 ]).addAnswer([
   "Para una ecografía hepatobiliopancreatica se necesitan 12 horas de ayuno.",
-  "*Muchas gracias, Medicina y Salud Berazategui.*",
+  "*Muchas gracias, ImágenesMedicina&Salud.*",
 ]);
 
 const renal = addKeyword(["5", "renal", "Renal"]).addAnswer([
   "Para una ecografía renal se necesitan 8 horas de ayuno.",
-  "*Muchas gracias, Medicina y Salud Berazategui.*",
+  "*Muchas gracias, ImágenesMedicina&Salud.*",
 ]);
 
 const dopplerRenal = addKeyword([, "7", "doppler", "Doppler"]).addAnswer([
   "Para un doppler renal se necesitan 8 horas de ayuno.",
-  "*Muchas gracias, Medicina y Salud Berazategui.*",
+  "*Muchas gracias, ImágenesMedicina&Salud.*",
 ]);
 
 const vesicoprostatica = addKeyword([
@@ -58,13 +58,13 @@ const vesicoprostatica = addKeyword([
   "vesicoprostatica",
 ]).addAnswer([
   "Para una ecografía vesicoprostatica se necesita ingerir medio litro de agua media hora antes del estudio.",
-  "*Muchas gracias, Medicina y Salud Berazategui.*",
+  "*Muchas gracias, ImágenesMedicina&Salud.*",
 ]);
 
 const preparaciones = addKeyword(["2"]).addAnswer(
   [
     "Para conocer las preparaciones previas de un estudio escriba el *número del estudio* o su *nombre*. LOS ESTUDIOS NO LISTADOS NO TIENEN PREPARACIÓN PREVIA.",
-    "*Muchas gracias, Medicina y Salud Berazategui.*",
+    "*Muchas gracias, ImágenesMedicina&Salud.*",
     "*1* *Ecografía abdominal*",
     "*2* *Ecografía Ginecológica transabdominal*",
     "*3* *Ecografía Obstétrica*",
@@ -98,7 +98,7 @@ const eco = addKeyword(["1"]).addAnswer(
   [
     "*1* Solicitar turno.",
     "*2* Indicaciones previas.",
-    "*Muchas gracias, Medicina y Salud Berazategui.*",
+    "*Muchas gracias, ImágenesMedicina&Salud.*",
   ],
   null,
   null,
@@ -107,7 +107,7 @@ const eco = addKeyword(["1"]).addAnswer(
 
 const turnosRayos = addKeyword(["1"]).addAnswer([
   "Los estudios se realizan sin turno, por orden de llegada los días *Lunes, Miércoles y Viernes de 14hs a 18hs*. Tenga en cuenta que algunos estudios requieren preparación previa.",
-  "*Muchas gracias, Medicina y Salud Berazategui.*",
+  "*Muchas gracias, ImágenesMedicina&Salud.*",
 ]);
 
 const preparacionesRayos = addKeyword(["2"]).addAnswer(
@@ -115,7 +115,7 @@ const preparacionesRayos = addKeyword(["2"]).addAnswer(
     "Los siguientes estudios requieren lo siguiente:",
     "*AYUNO 12HS*",
     "*NO INGERIR LÁCTEOS, VERDURAS DE HOJAS, BEBIDAS GASEOSAS, HARINAS Y NO FUMAR 24HS PREVIAS AL ESTUDIO*",
-    "*Muchas gracias, Medicina y Salud Berazategui.*",
+    "*Muchas gracias, ImágenesMedicina&Salud.*",
   ],
   null,
   null,
@@ -126,7 +126,7 @@ const rayos = addKeyword(["2"]).addAnswer(
   [
     "*1* Solicitar turno.",
     "*2* Indicaciones previas.",
-    "*Muchas gracias, Medicina y Salud Berazategui.*",
+    "*Muchas gracias, ImágenesMedicina&Salud.*",
   ],
   null,
   null,
@@ -137,7 +137,7 @@ const mamo = addKeyword(["3"]).addAnswer(
   [
     "*1* Solicitar turno.",
     "*Recuerde concurrir al turno con estudios mamarios previos. No debe colocarse talco ni desodorante en axilas*.",
-    "*Muchas gracias, Medicina y Salud Berazategui.*",
+    "*Muchas gracias, ImágenesMedicina&Salud.*",
   ],
   null,
   null,
@@ -146,11 +146,11 @@ const mamo = addKeyword(["3"]).addAnswer(
 
 const flowPrincipal = addKeyword([]).addAnswer(
   [
-    "*Bienvenido a Medicina y Salud Berazategui*, por favor, escriba un número indicado.",
+    "*Bienvenido a ImágenesMedicina&Salud*, por favor, escriba un número indicado.",
     "*1* Ecografía.",
     "*2* Radiología.",
     "*3* Mamografía.",
-    "*Muchas gracias, Medicina y Salud Berazategui.*",
+    "*Muchas gracias, ImágenesMedicina&Salud.*",
   ],
   null,
   null,
