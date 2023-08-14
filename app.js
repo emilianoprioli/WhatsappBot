@@ -156,10 +156,17 @@ const consultas = addKeyword(["4"]).addAnswer(
 );
 
 const volver = addKeyword(["0"]).addAnswer(
-  ["*Muchas gracias, ImágenesMedicina&Salud.*"],
+  [
+    "*Bienvenido a ImágenesMedicina&Salud*, por favor, escriba un número indicado.",
+    "*1* Ecografía.",
+    "*2* Radiología.",
+    "*3* Mamografía.",
+    "*4* Consultas.",
+    "*Muchas gracias, ImágenesMedicina&Salud.*",
+  ],
   null,
   null,
-  []
+  [eco, rayos, mamo, consultas, secundario]
 );
 
 const flowPrincipal = addKeyword([]).addAnswer(
@@ -169,17 +176,12 @@ const flowPrincipal = addKeyword([]).addAnswer(
     "*2* Radiología.",
     "*3* Mamografía.",
     "*4* Consultas.",
-    "*0* Volver.",
+    "*0* Inicio.",
     "*Muchas gracias, ImágenesMedicina&Salud.*",
   ],
   null,
-  addKeyword(["0"]).addAnswer(
-    ["*Muchas gracias, ImágenesMedicina&Salud.*"],
-    null,
-    null,
-    [flowPrincipal]
-  ),
-  [eco, rayos, mamo, consultas, secundario]
+  null,
+  [eco, rayos, mamo, consultas, volver, secundario]
 );
 
 const main = async () => {
