@@ -9,10 +9,14 @@ const QRPortalWeb = require("@bot-whatsapp/portal");
 const BaileysProvider = require("@bot-whatsapp/provider/baileys");
 const MockAdapter = require("@bot-whatsapp/database/mock");
 
-const secundario = addKeyword([]).addAnswer([
-  "Por favor ingrese una respuesta válida.",
-  "*Muchas gracias, ImágenesMedicina&Salud.*",
-]);
+const secundario = addKeyword([]).addAnswer(
+  [
+    "Por favor ingrese una respuesta válida.",
+    "*Muchas gracias, ImágenesMedicina&Salud.*",
+  ],
+  null,
+  (ctx, { flowDynamic, endFlow }) => endFlow()
+);
 
 const abdominal = addKeyword(["1", "abdominal", "Abdominal"]).addAnswer(
   [
@@ -118,8 +122,7 @@ const preparaciones = addKeyword(["2"]).addAnswer(
 const turnos = addKeyword(["1"]).addAnswer(
   ["https://msberazateguicomar.site.agendapro.com/ar/sucursal/22354"],
   null,
-  null,
-  [secundario]
+  (ctx, { flowDynamic, endFlow }) => endFlow()
 );
 
 const eco = addKeyword(["1"]).addAnswer(
@@ -133,10 +136,14 @@ const eco = addKeyword(["1"]).addAnswer(
   [turnos, preparaciones, secundario]
 );
 
-const turnosRayos = addKeyword(["1"]).addAnswer([
-  "Los estudios se realizan sin turno, por orden de llegada los días *Lunes, Miércoles y Viernes de 14hs a 18hs*. Tenga en cuenta que algunos estudios requieren preparación previa.",
-  "*Muchas gracias, ImágenesMedicina&Salud.*",
-]);
+const turnosRayos = addKeyword(["1"]).addAnswer(
+  [
+    "Los estudios se realizan sin turno, por orden de llegada los días *Lunes, Miércoles y Viernes de 14hs a 18hs*. Tenga en cuenta que algunos estudios requieren preparación previa.",
+    "*Muchas gracias, ImágenesMedicina&Salud.*",
+  ],
+  null,
+  (ctx, { flowDynamic, endFlow }) => endFlow()
+);
 
 const preparacionesRayos = addKeyword(["2"]).addAnswer(
   [
@@ -146,8 +153,7 @@ const preparacionesRayos = addKeyword(["2"]).addAnswer(
     "*Muchas gracias, ImágenesMedicina&Salud.*",
   ],
   null,
-  null,
-  [secundario]
+  (ctx, { flowDynamic, endFlow }) => endFlow()
 );
 
 const rayos = addKeyword(["2"]).addAnswer(
@@ -179,8 +185,7 @@ const consultas = addKeyword(["4"]).addAnswer(
     "*Muchas gracias, ImágenesMedicina&Salud.*",
   ],
   null,
-  null,
-  [secundario]
+  (ctx, { flowDynamic, endFlow }) => endFlow()
 );
 
 const volver = addKeyword(["0"]).addAnswer(
