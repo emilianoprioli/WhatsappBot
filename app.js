@@ -14,52 +14,80 @@ const secundario = addKeyword([]).addAnswer([
   "*Muchas gracias, ImágenesMedicina&Salud.*",
 ]);
 
-const abdominal = addKeyword(["1", "abdominal", "Abdominal"]).addAnswer([
-  "Para una ecografía abdominal se necesitan 8 horas de ayuno.",
-  "*Muchas gracias, ImágenesMedicina&Salud.*",
-]);
+const abdominal = addKeyword(["1", "abdominal", "Abdominal"]).addAnswer(
+  [
+    "Para una ecografía abdominal se necesitan 8 horas de ayuno.",
+    "*Muchas gracias, ImágenesMedicina&Salud.*",
+  ],
+  null,
+  (ctx, { flowDynamic, endFlow }) => endFlow()
+);
 
 const ginecológicaTransabdominal = addKeyword([
   "2",
   "ginecológica transabdominal",
   "Ginecológica transabdominal",
-]).addAnswer([
-  "Para una ecografía ginecológica transabdominal se necesita ingerir medio litro de agua media hora antes del estudio.",
-  "*Muchas gracias, ImágenesMedicina&Salud.*",
-]);
+]).addAnswer(
+  [
+    "Para una ecografía ginecológica transabdominal se necesita ingerir medio litro de agua media hora antes del estudio.",
+    "*Muchas gracias, ImágenesMedicina&Salud.*",
+  ],
+  null,
+  (ctx, { flowDynamic, endFlow }) => endFlow()
+);
 
-const obstetrica = addKeyword(["3", "obstetrica", "Obstetrica"]).addAnswer([
-  "Para una ecografía obstétrica de hasta 3 meses de embarazo, se necesita ingerir medio litro de agua media hora antes del estudio. Más de 3 meses de embarazo sin preparación.",
-  "*Muchas gracias, ImágenesMedicina&Salud.*",
-]);
+const obstetrica = addKeyword(["3", "obstetrica", "Obstetrica"]).addAnswer(
+  [
+    "Para una ecografía obstétrica de hasta 3 meses de embarazo, se necesita ingerir medio litro de agua media hora antes del estudio. Más de 3 meses de embarazo sin preparación.",
+    "*Muchas gracias, ImágenesMedicina&Salud.*",
+  ],
+  null,
+  (ctx, { flowDynamic, endFlow }) => endFlow()
+);
 
 const Hepatobiliopancreatica = addKeyword([
   "4",
   "hepatobiliopancreatica",
   "Hepatobiliopancreatica",
-]).addAnswer([
-  "Para una ecografía hepatobiliopancreatica se necesitan 12 horas de ayuno.",
-  "*Muchas gracias, ImágenesMedicina&Salud.*",
-]);
+]).addAnswer(
+  [
+    "Para una ecografía hepatobiliopancreatica se necesitan 12 horas de ayuno.",
+    "*Muchas gracias, ImágenesMedicina&Salud.*",
+  ],
+  null,
+  (ctx, { flowDynamic, endFlow }) => endFlow()
+);
 
-const renal = addKeyword(["5", "renal", "Renal"]).addAnswer([
-  "Para una ecografía renal se necesitan 8 horas de ayuno.",
-  "*Muchas gracias, ImágenesMedicina&Salud.*",
-]);
+const renal = addKeyword(["5", "renal", "Renal"]).addAnswer(
+  [
+    "Para una ecografía renal se necesitan 8 horas de ayuno.",
+    "*Muchas gracias, ImágenesMedicina&Salud.*",
+  ],
+  null,
+  (ctx, { flowDynamic, endFlow }) => endFlow()
+);
 
-const dopplerRenal = addKeyword([, "7", "doppler", "Doppler"]).addAnswer([
-  "Para un doppler renal se necesitan 8 horas de ayuno.",
-  "*Muchas gracias, ImágenesMedicina&Salud.*",
-]);
+const dopplerRenal = addKeyword([, "7", "doppler", "Doppler"]).addAnswer(
+  [
+    "Para un doppler renal se necesitan 8 horas de ayuno.",
+    "*Muchas gracias, ImágenesMedicina&Salud.*",
+  ],
+  null,
+  (ctx, { flowDynamic, endFlow }) => endFlow()
+);
 
 const vesicoprostatica = addKeyword([
   "6",
   "Vesicoprostatica",
   "vesicoprostatica",
-]).addAnswer([
-  "Para una ecografía vesicoprostatica se necesita ingerir medio litro de agua media hora antes del estudio.",
-  "*Muchas gracias, ImágenesMedicina&Salud.*",
-]);
+]).addAnswer(
+  [
+    "Para una ecografía vesicoprostatica se necesita ingerir medio litro de agua media hora antes del estudio.",
+    "*Muchas gracias, ImágenesMedicina&Salud.*",
+  ],
+  null,
+  (ctx, { flowDynamic, endFlow }) => endFlow()
+);
 
 const preparaciones = addKeyword(["2"]).addAnswer(
   [
