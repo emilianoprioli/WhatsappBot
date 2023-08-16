@@ -180,7 +180,7 @@ const mamo = addKeyword(["3"]).addAnswer(
 
 const consultas = addKeyword(["4"]).addAnswer(
   [
-    "Si quiere realizar una consulta no olvidé de hacerla de 10 a 17 hs y le responderemos a la brevedad.",
+    "Si quiere realizar una consulta no olvide de hacerla de 10 a 17 hs y le responderemos a la brevedad.",
     "*Se admiten imágenes*",
     "*Muchas gracias, ImágenesMedicina&Salud.*",
   ],
