@@ -204,7 +204,7 @@ const volver = addKeyword(["0"]).addAnswer(
 
 const flowPrincipal = addKeyword([]).addAnswer(
   [
-    "*Bienvenido a ImágenesMedicina&Salud*, por favor, escriba un número indicado.",
+    "*Bienvenido a ImágenesMedicina&Salud* Este número es sólo para consultas para el sector de Imágenes de Medicina y Salud Berazategui Cualquier otra consulta por favor comuníquese al ☎22039682 o por WhatsApp al 📱1123000664. Para consultas de Imágenes por favor escriba un número indicado.",
     "*1* Ecografía.",
     "*2* Radiología.",
     "*3* Mamografía.",
