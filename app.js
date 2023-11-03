@@ -178,11 +178,7 @@ const mamo = addKeyword(["3"]).addAnswer(
   [turnos, secundario]
 );
 
-const representante = addKeyword(["1"]).addAnswer(
-  null,
-  null,
-  (ctx, { flowDynamic, endFlow }) => null
-);
+const representante = addKeyword(["1"]).addAnswer(null, null, null);
 
 const consultas = addKeyword(["4"]).addAnswer(
   [
