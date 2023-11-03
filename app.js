@@ -178,10 +178,7 @@ const mamo = addKeyword(["3"]).addAnswer(
   [turnos, secundario]
 );
 
-const representante = addKeyword(["1"]).addAnswer(null, null, null, [
-  null,
-  secundario,
-]);
+const representante = addKeyword(["1"]);
 
 const consultas = addKeyword(["4"]).addAnswer(
   [
