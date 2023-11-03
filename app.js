@@ -181,7 +181,7 @@ const mamo = addKeyword(["3"]).addAnswer(
 const representante = addKeyword(["1"]).addAnswer(
   null,
   null,
-  (ctx, { flowDynamic, endFlow }) => endFlow()
+  (ctx, { flowDynamic, endFlow }) => null
 );
 
 const consultas = addKeyword(["4"]).addAnswer(
