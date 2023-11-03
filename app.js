@@ -179,7 +179,7 @@ const mamo = addKeyword(["3"]).addAnswer(
 );
 
 const representante = addKeyword(["1"]).addAnswer(null, null, null, [
-  turnos,
+  null,
   secundario,
 ]);
 
@@ -187,7 +187,7 @@ const consultas = addKeyword(["4"]).addAnswer(
   [
     "Si quiere realizar una consulta no olvide de hacerla de 10 a 17 hs y le responderemos a la brevedad.",
     "*Se admiten imágenes*",
-    "*1 Hablar con un representante*",
+    "*1* Hablar con un representante",
     "*Muchas gracias, ImágenesMedicina&Salud.*",
   ],
   null,
