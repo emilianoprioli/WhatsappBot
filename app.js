@@ -120,7 +120,7 @@ const preparaciones = addKeyword(["2"]).addAnswer(
 );
 
 const turnos = addKeyword(["1"]).addAnswer(
-  ["https://msberazateguicomar.site.agendapro.com/ar/sucursal/22354"],
+  ["Por favor indique, *DNI*,*Nombre y Apellido*,*Fecha de nacimiento* y *Estudio a realizar*","En otro caso llame al *1179256060 (Línea fija)*","O al *1126168083*","Muchas gracias *Medicina y Salud Berazategui*"],
   null,
   (ctx, { flowDynamic, endFlow }) => endFlow()
 );
