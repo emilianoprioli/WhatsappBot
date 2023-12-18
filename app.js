@@ -120,7 +120,17 @@ const preparaciones = addKeyword(["2"]).addAnswer(
 );
 
 const turnos = addKeyword(["1"]).addAnswer(
-  ["Por favor indique:", "*DNI*","*Nombre y Apellido*","*Fecha de nacimiento*","*Estudio a realizar*","En otro caso llame al *1179256060 (Línea fija)*","O al *1126168083 (WhatsApp)*","Se admiten imágenes","Muchas gracias *Medicina y Salud Berazategui*"],
+  [
+    "Por favor indique:",
+    "*DNI*",
+    "*Nombre y Apellido*",
+    "*Fecha de nacimiento*",
+    "*Estudio a realizar*",
+    "En otro caso llame al *1179256060 (Línea fija)*",
+    "O al *1126168083 (WhatsApp)*",
+    "Se admiten imágenes",
+    "Muchas gracias *Medicina y Salud Berazategui*",
+  ],
   null,
   (ctx, { flowDynamic, endFlow }) => endFlow()
 );
@@ -207,7 +217,8 @@ const volver = addKeyword(["0"]).addAnswer(
 
 const flowPrincipal = addKeyword([]).addAnswer(
   [
-    "*Bienvenido a ImágenesMedicina&Salud* Este número es sólo para consultas para el sector de Imágenes de Medicina y Salud Berazategui Cualquier otra consulta por favor comuníquese al ☎22039682 o por WhatsApp al 📱1123000664. Para consultas de Imágenes por favor escriba un número indicado.",
+    "*Bienvenido a ImágenesMedicina&Salud* Este número es sólo para consultas para el *sector de Imágenes* de Medicina y Salud Berazategui Cualquier otra consulta por favor comuníquese al ☎22039682 o por WhatsApp al 📱1123000664. Para consultas de Imágenes por favor escriba un número indicado.",
+    "Para ver sus estudios deberá registrarse en el siguiente link: https://www.msberazategui.com/components/forms/UserLogin",
     "*1* Ecografía.",
     "*2* Radiología.",
     "*3* Mamografía.",
